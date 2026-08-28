@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DP-750 Prep</title>
+<style>
+  :root{
+    --bg:#F4F6FB;
+    --surface:#FFFFFF;
+    --ink:#151A2B;
+    --muted:#5B6478;
+    --line:#E3E7F0;
+    --docs:#2F6FED;      --docs-soft:#E8EFFE;
+    --data:#1E9E6B;      --data-soft:#E4F7EE;
+    --scripts:#B5651D;   --scripts-soft:#FBEEE1;
+    --capstone:#7C3AED;  --capstone-soft:#F1E9FE;
+    --shadow: 0 1px 2px rgba(21,26,43,0.05), 0 10px 28px rgba(21,26,43,0.08);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;}
+  .wrap{max-width:920px;margin:0 auto;padding:3rem 1.5rem 5rem;}
+
+  header{margin-bottom:2.5rem;}
+  .kicker{font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+    color:var(--docs);margin:0 0 0.5rem;}
+  h1{font-size:2.1rem;margin:0 0 0.6rem;letter-spacing:-0.01em;}
+  .lede{color:var(--muted);font-size:1.05rem;max-width:60ch;margin:0;}
+
+  .progress-hint{
+    margin-top:1.5rem;background:var(--surface);border:1px solid var(--line);
+    border-radius:12px;padding:1rem 1.3rem;box-shadow:var(--shadow);
+    display:flex;gap:0.9rem;align-items:flex-start;font-size:0.92rem;color:var(--muted);
+  }
+  .progress-hint b{color:var(--ink);}
+
+  section.group{margin-bottom:2.4rem;}
+  .group-head{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.9rem;}
+  .badge{
+    width:2.1rem;height:2.1rem;border-radius:8px;display:flex;align-items:center;
+    justify-content:center;font-size:1.15rem;flex:none;
+  }
+  .group-head h2{font-size:1.15rem;margin:0;}
+  .group-head p{margin:0.1rem 0 0;color:var(--muted);font-size:0.88rem;}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.9rem;}
+  a.card{
+    display:block;background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    padding:1rem 1.15rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);
+    transition:transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  a.card:hover{transform:translateY(-2px);box-shadow:0 4px 8px rgba(21,26,43,0.08), 0 16px 32px rgba(21,26,43,0.12);}
+  .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:0.6rem;margin-bottom:0.35rem;}
+  .card-title{font-weight:600;font-size:0.98rem;}
+  .filetag{
+    flex:none;font-size:0.66rem;font-weight:700;letter-spacing:0.04em;
+    padding:0.15rem 0.45rem;border-radius:99px;
+  }
+  .card-desc{color:var(--muted);font-size:0.85rem;line-height:1.45;}
+
+  .docs .badge{background:var(--docs-soft);color:var(--docs);}
+  .docs .filetag{background:var(--docs-soft);color:var(--docs);}
+  .data .badge{background:var(--data-soft);color:var(--data);}
+  .data .filetag{background:var(--data-soft);color:var(--data);}
+  .scripts .badge{background:var(--scripts-soft);color:var(--scripts);}
+  .scripts .filetag{background:var(--scripts-soft);color:var(--scripts);}
+  .capstone .badge{background:var(--capstone-soft);color:var(--capstone);}
+  .capstone .filetag{background:var(--capstone-soft);color:var(--capstone);}
+
+  .path{
+    margin-top:0.55rem;font-family:Consolas,"Courier New",monospace;font-size:0.72rem;
+    color:var(--muted);background:var(--bg);border-radius:6px;padding:0.2rem 0.45rem;
+    display:inline-block;
+  }
+
+  footer{margin-top:3rem;padding-top:1.4rem;border-top:1px solid var(--line);
+    font-size:0.82rem;color:var(--muted);line-height:1.6;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="kicker">DP-750 &middot; Azure Databricks Data Engineer Associate</p>
+    <h1>Your practice folder</h1>
+    <p class="lede">Everything for the exam and the interview prep lives here: the
+      full study guide, ready-to-use sample data, and the capstone project's code —
+      already extracted, already runnable, nothing to retype from a PDF.</p>
+    <div class="progress-hint">
+      <span>&#128161;</span>
+      <span><b>Where to start:</b> open the study guide below and begin with Part 1.
+      Once its environment-setup chapter is done, come back here and follow
+      <span class="path">scripts/upload_to_azure.md</span> to load the sample data
+      into your workspace.</span>
+    </div>
+  </header>
+
+  <section class="group docs">
+    <div class="group-head">
+      <div class="badge">&#128218;</div>
+      <div><h2>Study guide &amp; project reference</h2>
+        <p>The 195-page book, plus a tour of real GitHub projects worth studying.</p></div>
+    </div>
+    <div class="cards">
+      <a class="card" href="docs/DP-750_Complete_Study_and_Interview_Guide.pdf">
+        <div class="card-top"><span class="card-title">Complete Study &amp; Interview Guide</span><span class="filetag">PDF</span></div>
+        <div class="card-desc">195 pages — Azure fundamentals, full setup, Unity Catalog, Delta Lake, orchestration, the capstone, a 96-question practice bank, and interview prep.</div>
+        <div class="path">docs/DP-750_Complete_Study_and_Interview_Guide.pdf</div>
+      </a>
+      <a class="card" href="docs/real_world_project_walkthrough.md">
+        <div class="card-top"><span class="card-title">Real-World Project Walkthrough</span><span class="filetag">MD</span></div>
+        <div class="card-desc">A guided tour of a real, public Azure Databricks lakehouse project on GitHub, plus two more worth bookmarking.</div>
+        <div class="path">docs/real_world_project_walkthrough.md</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="group data">
+    <div class="group-head">
+      <div class="badge">&#128202;</div>
+      <div><h2>Sample datasets</h2>
+        <p>Real, ready-to-upload data — 15 customers, 15 products, 150 order events.</p></div>
+    </div>
+    <div class="cards">
+      <a class="card" href="datasets/README.md">
+        <div class="card-top"><span class="card-title">Datasets — read first</span><span class="filetag">MD</span></div>
+        <div class="card-desc">What each file is, how the IDs join together, and the two ways you can use this data.</div>
+        <div class="path">datasets/README.md</div>
+      </a>
+      <a class="card" href="datasets/customers.csv">
+        <div class="card-top"><span class="card-title">customers.csv</span><span class="filetag">CSV</span></div>
+        <div class="card-desc">15 sample customers — id, name, email, region, signup date.</div>
+        <div class="path">datasets/customers.csv</div>
+      </a>
+      <a class="card" href="datasets/products.csv">
+        <div class="card-top"><span class="card-title">products.csv</span><span class="filetag">CSV</span></div>
+        <div class="card-desc">15 sample products — id, name, category, unit price.</div>
+        <div class="path">datasets/products.csv</div>
+      </a>
+      <a class="card" href="datasets/orders">
+        <div class="card-top"><span class="card-title">orders/</span><span class="filetag">JSON &times;6</span></div>
+        <div class="card-desc">150 simulated order events across 6 batch files — intentionally ~9% dirty, for your data-quality labs.</div>
+        <div class="path">datasets/orders/</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="group scripts">
+    <div class="group-head">
+      <div class="badge">&#9881;&#65039;</div>
+      <div><h2>Scripts &amp; upload instructions</h2>
+        <p>Make more data any time, and get it into Azure three different ways.</p></div>
+    </div>
+    <div class="cards">
+      <a class="card" href="scripts/generate_orders.py">
+        <div class="card-top"><span class="card-title">generate_orders.py</span><span class="filetag">PY</span></div>
+        <div class="card-desc">The Faker-based generator that made the sample order data. Run it again for more batches.</div>
+        <div class="path">scripts/generate_orders.py</div>
+      </a>
+      <a class="card" href="scripts/upload_to_azure.md">
+        <div class="card-top"><span class="card-title">Upload to Azure</span><span class="filetag">MD</span></div>
+        <div class="card-desc">Three ways to load this data into Databricks: drag-and-drop, CLI, or straight into ADLS Gen2.</div>
+        <div class="path">scripts/upload_to_azure.md</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="group capstone">
+    <div class="group-head">
+      <div class="badge">&#127959;&#65039;</div>
+      <div><h2>Capstone project code</h2>
+        <p>Part 5's retail lakehouse, extracted into real files — SQL, notebooks, a pipeline, a deployable bundle.</p></div>
+    </div>
+    <div class="cards">
+      <a class="card" href="capstone-project/README.md">
+        <div class="card-top"><span class="card-title">Capstone — read first</span><span class="filetag">MD</span></div>
+        <div class="card-desc">What's in this folder and the exact order to run it in.</div>
+        <div class="path">capstone-project/README.md</div>
+      </a>
+      <a class="card" href="capstone-project/sql">
+        <div class="card-top"><span class="card-title">sql/</span><span class="filetag">SQL &times;2</span></div>
+        <div class="card-desc">Seed the source database, then create the catalog/schemas/governance.</div>
+        <div class="path">capstone-project/sql/</div>
+      </a>
+      <a class="card" href="capstone-project/notebooks">
+        <div class="card-top"><span class="card-title">notebooks/</span><span class="filetag">PY &times;3</span></div>
+        <div class="card-desc">Bronze ingestion (Auto Loader + JDBC) and gold aggregates.</div>
+        <div class="path">capstone-project/notebooks/</div>
+      </a>
+      <a class="card" href="capstone-project/pipelines/silver_pipeline.py">
+        <div class="card-top"><span class="card-title">silver_pipeline.py</span><span class="filetag">PY</span></div>
+        <div class="card-desc">The Lakeflow Declarative Pipeline that cleans bronze into silver.</div>
+        <div class="path">capstone-project/pipelines/silver_pipeline.py</div>
+      </a>
+      <a class="card" href="capstone-project/bundle">
+        <div class="card-top"><span class="card-title">bundle/</span><span class="filetag">YAML &times;3</span></div>
+        <div class="card-desc">The Databricks Asset Bundle — deploy the whole project with one CLI command.</div>
+        <div class="path">capstone-project/bundle/</div>
+      </a>
+      <a class="card" href="capstone-project/README_TEMPLATE.md">
+        <div class="card-top"><span class="card-title">README_TEMPLATE.md</span><span class="filetag">MD</span></div>
+        <div class="card-desc">Fill this in once it runs, and push it to your own GitHub as a portfolio piece.</div>
+        <div class="path">capstone-project/README_TEMPLATE.md</div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    Built from your study guide's Part 5 and Part 1. Every code file here is meant to
+    be opened, edited, and run — not just read. If you regenerate the order data or
+    change anything, this folder is yours to keep working in for the rest of your
+    30-day plan.
+  </footer>
+
+</div>
+</body>
+</html>
