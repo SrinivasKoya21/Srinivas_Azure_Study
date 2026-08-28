@@ -1,0 +1,16 @@
+product_id,product_name,category,unit_price
+1,Wireless Earbuds Pro,Electronics,89.99
+2,4K Streaming Stick,Electronics,39.99
+3,Mechanical Keyboard,Electronics,74.50
+4,Espresso Machine,Home,199.00
+5,Non-Stick Cookware Set,Home,129.99
+6,Memory Foam Pillow,Home,34.99
+7,Running Shoes,Sports,84.99
+8,Yoga Mat,Sports,24.99
+9,Adjustable Dumbbell Set,Sports,149.00
+10,Men's Denim Jacket,Apparel,59.99
+11,Women's Wool Coat,Apparel,129.00
+12,Graphic T-Shirt,Apparel,19.99
+13,Data Engineering with Databricks,Books,44.99
+14,The Pragmatic Programmer,Books,34.50
+15,Designing Data-Intensive Applications,Books,49.99

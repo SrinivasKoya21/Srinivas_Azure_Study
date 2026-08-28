@@ -1,0 +1,16 @@
+# resources/pipelines.yml
+resources:
+  pipelines:
+    retail_silver_pipeline:
+      name: retail_silver_pipeline_${bundle.target}
+      catalog: retail_lakehouse
+      target: silver
+      photon: true
+      continuous: false
+      libraries:
+        - notebook:
+            path: ../pipelines/silver_pipeline.py
+      clusters:
+        - label: default
+          num_workers: 1
+          node_type_id: Standard_DS3_v2

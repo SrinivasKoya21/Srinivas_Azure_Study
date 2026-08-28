@@ -1,0 +1,16 @@
+customer_id,first_name,last_name,email,region,signup_date
+1,Aria,Nakamura,aria.nakamura@example.com,APAC,2023-02-11
+2,Liam,O'Connor,liam.oconnor@example.com,Europe,2022-11-02
+3,Sofia,Reyes,sofia.reyes@example.com,LATAM,2023-06-19
+4,Ethan,Walker,ethan.walker@example.com,North America,2021-09-14
+5,Noor,Haddad,noor.haddad@example.com,Europe,2023-01-05
+6,Priya,Shah,priya.shah@example.com,APAC,2022-04-27
+7,Marco,Rossi,marco.rossi@example.com,Europe,2023-08-30
+8,Chidi,Okonkwo,chidi.okonkwo@example.com,North America,2022-12-15
+9,Isla,Campbell,isla.campbell@example.com,North America,2023-03-22
+10,Diego,Fernandez,diego.fernandez@example.com,LATAM,2021-07-08
+11,Yuki,Tanaka,yuki.tanaka@example.com,APAC,2023-05-01
+12,Emma,Schmidt,emma.schmidt@example.com,Europe,2022-02-19
+13,Kwame,Mensah,kwame.mensah@example.com,North America,2023-07-11
+14,Valentina,Moreno,valentina.moreno@example.com,LATAM,2022-10-06
+15,Hana,Kobayashi,hana.kobayashi@example.com,APAC,2021-12-25
